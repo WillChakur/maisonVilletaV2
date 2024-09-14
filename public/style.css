@@ -108,3 +108,52 @@
 .is_hidden {
     display: none;
 }
+
+.cottage {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.map-container {
+    width: 80%;
+    overflow: hidden;
+}
+
+.whatsapp-button {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+}
+
+@media (max-width: 500px) {
+    .carousel {
+        position: relative;
+        height: 200px;
+        width: 800px;
+        margin-bottom: 60px;
+    }
+}
