@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--bs-body-font-family)
+}
+
+:root {
+    --bs-body-font-family: "Playfair Display", serif;
+}
+
+.navbar-brand {
+    font-family: 'Italianno', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero {
+    background-image: url('./assets/heroPic-4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.icon {
+    width: 50px;
+}
+
+.carousel {
+    position: relative;
+    height: 400px;
+    width: 600px;
+    margin-bottom: 60px;
+}
+
+.carousel__track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__track {
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__button img {
+    width: 20px;
+}
+
+.carousel__button--left {
+    left: -25px;
+}
+
+.carousel__button--rigth {
+    right: -25px;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.is_hidden {
+    display: none;
+}
